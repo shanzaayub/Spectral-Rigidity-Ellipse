@@ -16,7 +16,7 @@ Generates one file:
 ### Col_pts_find.py
 _Objective: Finds the collision points of orbits of periods 1 to 500, for each eccentricity._  
 First finds a sequence of values `lambda_q` corresponding to periodic orbits of rotation number 1/q (where q is in 1 to 500). This is done by numerically inverting the formula for rotation number, `omega_lambda` of the orbit associated to the caustic `C_lambda`, using the bisecting method. Then, finds the collision points.  
-Generates one file:
+Generates one file per eccentricity:
 * all_periods_`<eccentricity>`e_col_amplitudes.txt  
 
 ### Spectral_rigidity_script.py
