@@ -15,7 +15,7 @@ Generates one file:
 
 ### Col_pts_find.py
 _Objective: Finds the collision points of orbits of periods 1 to 500, for each eccentricity._  
-First finds a sequence of values \lambda_q corresponding to periodic orbits of rotation number 1/q (where q is in 1 to 500). This is done by numerically inverting the formula for rotation number, \omega_\lambda of the orbit associated to the caustic C_\lambda, using the bisecting method. Then, finds the collision points.  
+First finds a sequence of values `lambda_q` corresponding to periodic orbits of rotation number 1/q (where q is in 1 to 500). This is done by numerically inverting the formula for rotation number, `omega_lambda` of the orbit associated to the caustic `C_lambda`, using the bisecting method. Then, finds the collision points.  
 Generates one file:
 * all_periods_`<eccentricity>`e_col_amplitudes.txt  
 
@@ -25,4 +25,4 @@ Uses the files generated from the earlier scripts, and applies the technique imp
 Generates one file:  
 * Norms_till_`<max_eccentricity_considered>`\_`<step_size>`step_e\_`<gamma_used>`gamma.txt  
 
-*Note: This file will be named differently based on the max eccentricity, step-size between the eccentricities considered and the value of \gamma used when the script is run*.
+*Note: This file will be named differently based on the max eccentricity, step-size between the eccentricities considered and the value of `gamma` used when the script is run*.
