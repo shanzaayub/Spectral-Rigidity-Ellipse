@@ -1,4 +1,5 @@
-""" This script generates the norm terms for each eccentricity using the files created in the previous steps, based on the terms generated, we can infer dynamical spectral rigidity
+""" This script generates the norm terms for each eccentricity using the files created in the previous steps,
+based on the terms generated, we can infer dynamical spectral rigidity
 """
 
 from scipy import special
