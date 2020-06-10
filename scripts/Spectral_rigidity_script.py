@@ -132,7 +132,7 @@ def norm_partial_q(gamma,q,str_e,e):
 ########## Some considerations in the interest of computational time ###########################
 
 magic_j=750 #arbitrary choice, consider this to be the point when the terms are close enough to their "actual" values
-gamma=3.001 #for faster decay, can change this to get smaller values but keep in mind the decay may be slower
+gamma=3.5 #for faster decay, can change this to get smaller values but keep in mind the decay may be slower
 
 
 norm_terms_circle=[] # these are the terms we get for the case of the circle (eccentricity 0) to compare to our values
@@ -146,7 +146,7 @@ arbitrary_accuracy=100 # ideally this should give an error of at most 1/accuracy
 sampled_e=[]
 norm_e=[]
 norm_dict = {}
-for e in np.arange(0.45,0.7,0.01): # the eccentricities to consider, change this to look at other ones
+for e in np.arange(0,1,0.1): # the eccentricities to consider, change this to look at other ones
     t0 = time.time()
     str_e = '%.2f'%e
     sampled_e.append(e)
