@@ -175,7 +175,7 @@ for e in np.arange(0,1,0.1): # the eccentricities to consider, change this to lo
         print("Norm term:",norm_terms[q-1], "(reference for the circle:", norm_terms_circle[q-1], ")")
         accord=abs((norm_terms[q-1]-norm_terms_circle[q-1])/norm_terms_circle[q-1])
 
-        if (q > 3) and (accord < .5): #difference between the actual value and the approximate value is less than 5%
+        if (q > 3) and (accord < .1): #difference between the actual value and the approximate value is less than 10%
             break
         elif (q > 20) and (norm_term < 0.5): #the terms are less than 1
             break
